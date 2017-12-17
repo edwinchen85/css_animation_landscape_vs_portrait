@@ -37,6 +37,17 @@
     right: 0;
 }
 
+@media (orientation: portrait) {
+  .ball {
+    animation-name: portrait;
+  }
+  .title .portrait {
+    animation: show .3s ease-out forwards;
+  }
+  .title .landscape {
+    animation: hide .3s ease-out forwards;
+  }
+}
 
 @-webkit-keyframes portrait {
   0% {
